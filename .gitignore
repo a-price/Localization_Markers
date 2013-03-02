@@ -1,0 +1,13 @@
+bin/
+build/
+lib/
+srv_gen/
+msg_gen/
+bags/
+
+*~
+*.pyc
+*.svn
+*.o
+*.so
+
