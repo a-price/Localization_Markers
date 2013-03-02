@@ -33,7 +33,6 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <interactive_markers/interactive_marker_server.h>
 #include <tf/tf.h>
 #include <tf/transform_broadcaster.h>
-#include <resource_retriever/retriever.h>
 #include <geometry_msgs/Pose.h>
 #include <geometry_msgs/PoseStamped.h>
 #include <sensor_msgs/PointCloud2.h>
@@ -286,12 +285,12 @@ void generateInputCloud(void){
     bool debug;
     int discrete;
     ros::param::get("/localization_marker_server/input_cloud/discretization", discrete);
+    std::string input_cloud_resource;
 
     switch(currentMarkerType){
 
         case MESH:
 
-            std::string input_cloud_resource;
             ros::param::get("/localization_marker_server/input_cloud/resource", input_cloud_resource);
             if (pcl::io::loadPCDFile<pcl::PointXYZ> (input_cloud_resource.c_str(), *pcl_input_cloud) == -1) //* load the file
             {
