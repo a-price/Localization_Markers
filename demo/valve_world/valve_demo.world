@@ -79,14 +79,14 @@
     <body:trimesh name="valve_body_2">
       <geom:trimesh name="valve_geom_2">
 	<scale>0.05 0.05 0.05</scale>
-	<mesh>/home/fire/ROS_workspace/Localization_Markers/demo/valve_world/BFLY.dae</mesh>
+	<mesh>package://localization_markers/demo/valve_world/BFLY.dae</mesh>
 	<collision name="valve_collision_2">
 	    <scale>0.05 0.05 0.05</scale>
-	    <mesh>/home/fire/ROS_workspace/Localization_Markers/demo/valve_world/BFLY.stl</mesh>
+	    <mesh>package://localization_markers/demo/valve_world/BFLY.stl</mesh>
 	</collision>
 	<visual name="valve_visual_2">
 	    <scale>0.05 0.05 0.05</scale>
-	    <mesh>/home/fire/ROS_workspace/Localization_Markers/demo/valve_world/BFLY.dae</mesh>
+	    <mesh>package://localization_markers/demo/valve_world/BFLY.dae</mesh>
 	</visual>
       </geom:trimesh>
     </body:trimesh>

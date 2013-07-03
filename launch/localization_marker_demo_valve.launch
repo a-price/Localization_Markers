@@ -56,7 +56,7 @@
 
 
 
-    <node name="localization_marker_server" pkg="Localization_Markers" type="localization_marker_server" />
-    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find Localization_Markers)/rviz/localization_markers_pr2.vcg" />
+    <node name="localization_marker_server" pkg="localization_markers" type="localization_marker_server" />
+    <node name="rviz" pkg="rviz" type="rviz" />
 
 </launch>
