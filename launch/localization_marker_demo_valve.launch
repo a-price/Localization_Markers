@@ -2,8 +2,8 @@
 
     <param name="/localization_marker_server/marker/name" value="object" type="string" />
     <param name="/localization_marker_server/marker/description" value="Align Me!" type="string" />
-    <param name="/localization_marker_server/marker/type" value="MESH" type="string" />
-    <param name="/localization_marker_server/marker/mesh_resource" value="package://wpi_drc_sim/meshes/valve_models/logitech_driving_force_pro_wheel.dae" type="string" />
+    <param name="/localization_marker_server/marker/type" value="QUAD" type="string" />
+    <!--<param name="/localization_marker_server/marker/mesh_resource" value="package://wpi_drc_sim/meshes/valve_models/logitech_driving_force_pro_wheel.dae" type="string" />-->
     <param name="/localization_marker_server/marker/defaultPose/position/x" value="0" type="double" />
     <param name="/localization_marker_server/marker/defaultPose/position/y" value="0" type="double" />
     <param name="/localization_marker_server/marker/defaultPose/position/z" value="0" type="double" />

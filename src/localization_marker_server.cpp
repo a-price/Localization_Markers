@@ -37,7 +37,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <geometry_msgs/PoseStamped.h>
 #include <sensor_msgs/PointCloud2.h>
 
-#include "Localization_Markers/set.h"
+#include "localization_markers/set.h"
 
 // PCL specific includes
 #include <iostream>
@@ -633,7 +633,7 @@ void pc_target_cb(sensor_msgs::PointCloud2::Ptr input){
 
 }
 
-void set_cb(Localization_Markers::set input){
+void set_cb(localization_markers::set input){
 
     ros::param::set("/localization_marker_server/marker/name", input.name);
     ros::param::set("/localization_marker_server/marker/description", input.description);
